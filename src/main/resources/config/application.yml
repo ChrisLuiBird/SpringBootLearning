@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+spring:
+  profiles:
+    active: uat
+person:
+  name: Chris
+  age: 25
+  happy: true
+  birth: 1996/09/12
+  maps: {k1: v1,k2: v2}
+  cat: cc
+  lists:
+    - boy
+    - music
+  pet:
+    name: ${person.cat:bb}
+    age: 2
