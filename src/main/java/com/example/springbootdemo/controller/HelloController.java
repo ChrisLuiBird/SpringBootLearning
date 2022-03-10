@@ -7,12 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
  * @author LUIKITFUNG
  * @create 2022 - 03 - 04 - 16:58
  **/
-
+//在templates 目录下的页面, 只能通过controller访问
 @RestController
 public class HelloController {
-
-    @GetMapping("/hello")
     public String hello(){
-        return "hello world";
+        return "index";
     }
 }
